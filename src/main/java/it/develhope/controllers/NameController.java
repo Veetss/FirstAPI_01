@@ -11,13 +11,13 @@ public class NameController {
 
     @GetMapping
     public String getName() {
-        return "Vittoria";
+        return "Hello! My name is Vittoria.";
     }
 
     @PostMapping
     public String postName() {
         String name = "Vittoria";
         StringBuilder reverseName = new StringBuilder(name);
-        return reverseName.reverse().toString();
+        return "My reverse name is: " + reverseName.reverse().toString();
     }
 }
